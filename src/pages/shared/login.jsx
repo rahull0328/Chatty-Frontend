@@ -29,13 +29,17 @@ const login = () => {
           className="form-input"
           required
         />
-        <button type="submit">Sign Up</button>
+        <button type="submit">{currState === "Sign Up" ? "Create Account" : "Login Now"}</button>
         <div className="login-term">
           <input type="checkbox" />
           <p>Agree to the terms os use & privacy policy.</p>
         </div>
         <div className="login-forgot">
-          <p className="login-toogle">Already have an account? <span onClick={() => setCurrState("Login")}>Click Here</span></p>
+          {
+            currState === "Sign Up" 
+            ? <p className="login-toogle">Already have an account? <span onClick={() => setCurrState("Login")}>Login Now</span></p>
+            : <p className="login-toogle">Create an Account <span onClick={() => setCurrState("Sign Up")}>Click Here</span></p>
+          }
         </div>
       </form>
     </div>
