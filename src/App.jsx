@@ -1,10 +1,16 @@
 import React from 'react'
-
+import { Routes } from 'react-router-dom'
+import Login from './pages/shared/login'
+import Chat from './pages/chat/chat'
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   )
 }
 
