@@ -15,14 +15,30 @@ const ChatBox = () => {
 
       <div className="chat-msg">
         <div className="send-msg">
-          <p className="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rerum quibusdam nisi fugiat quasi dolorum. Ullam, reiciendis sapiente soluta esse sequi numquam distinctio aliquid reprehenderit eveniet, nulla laudantium voluptatibus id.</p>
+          <p className="msg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            rerum quibusdam nisi fugiat quasi dolorum.
+          </p>
           <div>
             <img src={assets.profile_img} alt="profile_image" />
             <p>2:30 PM</p>
           </div>
         </div>
+
+        {/* for image */}
+        <div className="send-msg">
+          <img src={assets.pic1} alt="" className="msg-img" />
+          <div>
+            <img src={assets.profile_img}  alt="profile_image" />
+            <p>2:30 PM</p>
+          </div>
+        </div>
+
         <div className="rec-msg">
-          <p className="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rerum quibusdam nisi fugiat quasi dolorum. Ullam, reiciendis sapiente soluta esse sequi numquam distinctio aliquid reprehenderit eveniet, nulla laudantium voluptatibus id.</p>
+          <p className="msg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            rerum quibusdam nisi fugiat quasi dolorum.
+          </p>
           <div>
             <img src={assets.profile_img} alt="profile_image" />
             <p>2:30 PM</p>
