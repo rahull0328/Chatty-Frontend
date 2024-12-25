@@ -36,12 +36,12 @@
 }
 
 .rs hr {
-    margin: 15px 0px;
     border-color: #ffffff50;
+    margin: 15px 0px;
 }
 
 .rs-media {
-    padding: opx 20px;
+    padding: 0px 20px;
     font-size: 13px;
 }
 
