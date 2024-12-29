@@ -57,8 +57,17 @@ const Login = async (email, password) => {
     await signInWithEmailAndPassword(auth, email, password);
   } catch (error) {
     console.error(error);
-    toast.error(error.code);
+    toast.error(error.code.split('/')[1].split('-').join(" "));
   }
 };
 
-export { signup, Login };
+const logout = async () => {
+    try {
+        await signOut(auth);
+    } catch (error) {
+        console.error(error);
+        toast.error(error.code.split('/')[1].split('-').join(" "));
+    }
+}
+
+export { signup, Login, logout, auth, db };
