@@ -6,21 +6,21 @@ import Profile from "./pages/shared/profile";
 import { ToastContainer, toast } from "react-toastify";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./config/firebase";
+import { AppContext } from "./context/AppContext";
 
 const App = () => {
 
   const navigate = useNavigate();
-  const {loadUserData} = useContext();
+  const {loadUserData} = useContext(AppContext);
 
   // check user logged in or not
   useEffect(() => {
     onAuthStateChanged(auth, async (user) => {
       if (user) {
         navigate("/chat")
-        console.log(user);
+        await loadUserData(user.uid);
       } else {
         navigate("/");
-        toast.error(error.code.split("/")[1].split("-").join(" "));
       }
     });
   }, []);
