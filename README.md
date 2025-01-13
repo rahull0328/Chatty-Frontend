@@ -75,3 +75,33 @@ const firebaseConfig = {
 npm run dev
 ```
 
+---
+
+## 🧪 Usage
+
+1. Sign in or create an account using the login page.
+2. Enter a chat room and start sending messages.
+3. Messages will be synced in real time across all connected users.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Create a pull request.
+
+---
+
+## 📧 Contact
+
+For any inquiries or support, please reach out:
+```bash
+npm run dev
+```
+- **GitHub**: [https://github.com/rahull0328](https://github.com/rahull0328)
+Footer
