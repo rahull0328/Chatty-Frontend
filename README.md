@@ -61,8 +61,8 @@ Make sure you have the following installed on your system:
 ### Contributing
 We welcome contributions to the Chatty project! To contribute:
 
-🍴 Fork the repository.
-🌱 Create a new branch (git checkout -b feature/your-feature).
-💻 Commit your changes (git commit -am 'Add new feature').
-📤 Push to your branch (git push origin feature/your-feature).
-🤝 Open a pull request.
+- 🍴 Fork the repository.
+- 🌱 Create a new branch (git checkout -b feature/your-feature).
+- 💻 Commit your changes (git commit -am 'Add new feature').
+- 📤 Push to your branch (git push origin feature/your-feature).
+- 🤝 Open a pull request.
