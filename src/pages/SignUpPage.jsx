@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import AuthImagePattern from "../components/AuthImagePattern";
+import toast from "react-hot-toast";
 
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -21,9 +22,23 @@ const SignUpPage = () => {
   });
 
   const { signup, isSigningUp } = useAuthStore();
-  const validateForm = () => {};
+  const validateForm = () => {
+    if (!formData.fullname.trim()) return toast.error("Full Name is Required!");
+    if (!formData.email.trim()) return toast.error("Email is Required!");
+    if (
+      !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email)
+    )
+      return toast.error("Invalid Email Format!");
+    if (!formData.password) return toast.error("Password is Required!");
+    if (formData.password.length < 6)
+      return toast.error("Password must be at least 6 characters");
+
+    return true;
+  };
   const handleSubmit = (e) => {
-    e.preventDefaut();
+    e.preventDefault();
+    const success = validateForm();
+    if (success === true) signup(formData);
   };
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
@@ -36,7 +51,9 @@ const SignUpPage = () => {
               <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                 <MessageSquare className="size-6 text-primary" />
               </div>
-              <h1 className="text-2xl font-bold mt-2">Create Account</h1>
+              <h1 className="text-2xl font-bold mt-2 text-white">
+                Create Account
+              </h1>
               <p className="text-base-content/60">
                 Get Started With Your Free Account!
               </p>
@@ -143,10 +160,9 @@ const SignUpPage = () => {
 
       {/* right side */}
 
-      <AuthImagePattern 
+      <AuthImagePattern
         title="Join the Chatty Community Today!"
         subtitle="Connect with friends, share moments, and stay in touch with your loved ones!"
-
       />
     </div>
   );
