@@ -1,4 +1,4 @@
-# Chatty
+# Chatty - Frontend
 
 Chatty is a real-time chat application built with React.js that allows users to send and receive messages in real time. The frontend is integrated with MongoDB for storing user data and messages. It uses Socket.IO to establish a real-time connection for seamless messaging. Additionally, Chatty provides theme-changing options and skeleton loading animations for a smooth user experience.
 
