@@ -1,70 +1,83 @@
-# Chatty - Frontend
+# 💬 Chatty - Frontend
 
-Chatty is a real-time chat application built with React.js that allows users to send and receive messages in real time. The frontend is integrated with MongoDB for storing user data and messages. It uses Socket.IO to establish a real-time connection for seamless messaging. Additionally, Chatty provides theme-changing options and skeleton loading animations for a smooth user experience.
+**Chatty** is a modern **real-time chat application** built with **React.js**, offering instant messaging powered by **Socket.IO**, smooth **theme customization**, and **skeleton loading animations** for a delightful user experience.  
+The frontend integrates seamlessly with **MongoDB** to store user and message data while ensuring a **responsive and engaging UI**.
 
-<img src="./src/assets/chatty.png" alt="baner">
-
----
-
-## Features
-
-- 🗣 **Real-time Messaging**: Thanks to Socket.IO, users can send and receive messages instantly.
-- 🎨 **Customizable Themes**: Users can change the chat application theme to personalize their experience.
-- ⏳ **Skeleton Loading Animations**: Displays smooth skeleton animations while waiting for content to load, enhancing user experience.
-- 📱 **Responsive Design**: The frontend is fully responsive, ensuring a seamless experience across devices.
+<img src="./src/assets/chatty.png" alt="Chatty App Banner">
 
 ---
 
-## Tech Stack
+## 🚀 Features
 
-- ⚛️ **React.js** - Frontend framework
-- 🔌 **Socket.IO** - Real-time bidirectional event-based communication
-- 🗄 **MongoDB** - Database for storing user and message data
-- 🎨 **Tailwind CSS** - For styling, including theme management
-- 💀 **React Skeleton** - For loading skeletons during content fetch
-- 🌼 **Daisy UI** - For styling, including theme management
+- 🗣 **Real-Time Messaging** – Send and receive messages instantly with Socket.IO.
+- 🎨 **Customizable Themes** – Personalize the chat look and feel with different themes.
+- ⏳ **Skeleton Loading Animations** – Smooth loading indicators for better UX.
+- 📱 **Fully Responsive Design** – Optimized for desktops, tablets, and mobile devices.
+- 🛡 **Persistent Data** – Chat history stored securely in MongoDB.
+- ⚡ **Fast & Lightweight** – Built with performance in mind using React + Vite.
 
 ---
 
-## Getting Started
+## 🛠 Tech Stack
 
-To get started with the project locally, follow the steps below:
+| Technology | Purpose |
+|------------|---------|
+| ⚛ **React.js** | UI development |
+| 🔌 **Socket.IO** | Real-time bidirectional communication |
+| 🗄 **MongoDB** | Database for user & message storage |
+| 🎨 **Tailwind CSS** | Styling framework |
+| 🌼 **Daisy UI** | Theme & UI components |
+| 💀 **React Skeleton** | Loading placeholders |
 
-### Prerequisites
+---
 
-Make sure you have the following installed on your system:
+## 📦 Getting Started
 
-- **Node.js** (v14 or higher)
-- **npm** (v6 or higher)
-- **MongoDB** (for local development, or you can use MongoDB Atlas)
+Follow these steps to run the project locally:
 
-### Installation
+### ✅ Prerequisites
+- **Node.js** (v14+)
+- **npm** (v6+)
+- **MongoDB** (Local or MongoDB Atlas)
 
-1. Clone the repository:
+---
 
+### 🔧 Installation
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/rahull0328/chatty-frontend.git
    cd chatty-frontend
+## 📦 Installation
 
-2. Install the required dependencies
-
+1. **Install dependencies**
+   ```bash
+   npm install
+2. **Start the development server**
+   ```bash 
+   npm run dev
+3. **Open in browser**
     ```bash
-    npm install
-
-3. Start the development server
-
-    ```bash
-    npm run dev
-
-4. Visit http://localhost:5173/ in your browser.
+    http://localhost:5173/
+    
+🤝Contributing:
+If you'd like to contribute to this project, please fork the repository and create a pull request.
 
 ---
 
-### Contributing
-We welcome contributions to the Chatty project! To contribute:
+📌 Roadmap
 
-- 🍴 Fork the repository.
-- 🌱 Create a new branch (git checkout -b feature/your-feature).
-- 💻 Commit your changes (git commit -am 'Add new feature').
-- 📤 Push to your branch (git push origin feature/your-feature).
-- 🤝 Open a pull request.
+ Add user authentication
+
+ Implement group chats
+
+ Add emoji & file sharing support
+
+ Improve message search functionality.
+
+ ---
+ 📧 Contact
+
+💻 Author: Rahul Mehta
+🐙 GitHub: rahull0328
+---
